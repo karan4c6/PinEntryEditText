@@ -56,17 +56,12 @@ class PinEntryEditText : AppCompatEditText, View.OnKeyListener {
     private var mCanvasBottom: Int = 0
 
     //custom attributes
-    private var mNumChars =
-        DEFAULT_PIN_SIZE // number of rectangles by default
-    private var mBorderColor: Int =
-        DEFAULT_BORDER_COLOR
-    private var mTextColor: Int =
-        DEFAULT_TEXT_COLOR
+    private var mNumChars = DEFAULT_PIN_SIZE // number of rectangles by default
+    private var mBorderColor: Int = DEFAULT_BORDER_COLOR
+    private var mTextColor: Int = DEFAULT_TEXT_COLOR
 
-    private var mIsMask =
-        DEFAULT_IS_MASK
-    private var mMaskChar: String =
-        DEFAULT_MASK_CHAR
+    private var mIsMask = DEFAULT_IS_MASK
+    private var mMaskChar: String = DEFAULT_MASK_CHAR
 
     private lateinit var mStrokePaint: Paint
 
@@ -158,16 +153,24 @@ class PinEntryEditText : AppCompatEditText, View.OnKeyListener {
 
             context.obtainStyledAttributes(attrs, R.styleable.PinEntryEditText).apply {
                 try {
-                    setBorderColor(getColor(R.styleable.PinEntryEditText_borderColor,
-                        DEFAULT_BORDER_COLOR
-                    ))
-                    setCharColor(getColor(R.styleable.PinEntryEditText_textColor,
-                        DEFAULT_TEXT_COLOR
-                    ))
-                    mNumChars = getInt(R.styleable.PinEntryEditText_numChars,
+                    setBorderColor(
+                        getColor(
+                            R.styleable.PinEntryEditText_borderColor,
+                            DEFAULT_BORDER_COLOR
+                        )
+                    )
+                    setCharColor(
+                        getColor(
+                            R.styleable.PinEntryEditText_textColor,
+                            DEFAULT_TEXT_COLOR
+                        )
+                    )
+                    mNumChars = getInt(
+                        R.styleable.PinEntryEditText_numChars,
                         DEFAULT_PIN_SIZE
                     )
-                    mIsMask = getBoolean(R.styleable.PinEntryEditText_isMask,
+                    mIsMask = getBoolean(
+                        R.styleable.PinEntryEditText_isMask,
                         DEFAULT_IS_MASK
                     )
                     mMaskChar = getString(R.styleable.PinEntryEditText_maskChar).toString()
@@ -260,8 +263,7 @@ class PinEntryEditText : AppCompatEditText, View.OnKeyListener {
         mStrokePaint = Paint()
         mStrokePaint.style = Paint.Style.STROKE
         mStrokePaint.color = getBorderColor()
-        mStrokePaint.strokeWidth =
-            DEFAULT_BORDER_WIDTH
+        mStrokePaint.strokeWidth = DEFAULT_BORDER_WIDTH
     }
 
     private fun getBorderColor(): Int {
