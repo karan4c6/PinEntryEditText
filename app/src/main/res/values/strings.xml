@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">PinEntryCustomView</string>
     <string name="confirm_your_passcode">Confirm your Passcode</string>
-    <string name="custom_pin_entry_view">Custom Pin Entry View</string>
     <string name="retry">Retry</string>
     <string name="forgot_passcode">Forgot Password</string>
     <string name="retype_passcode">Retype Password</string>
