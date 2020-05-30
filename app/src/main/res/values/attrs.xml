@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinEntryEditText">
+        <attr name="numChars" format="integer"/>
+        <attr name="maskChar" format="string"/>
+        <attr name="isMask" format="boolean"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>
