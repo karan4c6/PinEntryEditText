@@ -1,4 +1,4 @@
-# PinEntryEditText
+# PinEntryEditText in Kotlin for Android Apps
 A Custom Pin entry EditText View, which extends AppCompatEditText
 This custom view is purely written in Kotlin language.
 
